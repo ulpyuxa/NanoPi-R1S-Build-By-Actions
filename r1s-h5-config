@@ -194,7 +194,12 @@ CONFIG_CPU_TYPE="cortex-a53"
 CONFIG_LINUX_4_14=y
 CONFIG_DEFAULT_base-files=y
 CONFIG_DEFAULT_brcmfmac-firmware-43430-sdio=y
+CONFIG_DEFAULT_block-mount=y
 CONFIG_DEFAULT_busybox=y
+CONFIG_DEFAULT_ca-certificates=y
+CONFIG_DEFAULT_coremark=y
+CONFIG_DEFAULT_ddns-scripts_aliyun=y
+CONFIG_DEFAULT_ddns-scripts_dnspod=y
 CONFIG_DEFAULT_default-settings=y
 CONFIG_DEFAULT_dnsmasq-full=y
 CONFIG_DEFAULT_dropbear=y
@@ -209,10 +214,33 @@ CONFIG_DEFAULT_kmod-ipt-offload=y
 CONFIG_DEFAULT_kmod-leds-gpio=y
 CONFIG_DEFAULT_kmod-ledtrig-heartbeat=y
 CONFIG_DEFAULT_kmod-rtc-sunxi=y
+CONFIG_DEFAULT_kmod-ipt-raw=y
+CONFIG_DEFAULT_kmod-nf-nathelper=y
+CONFIG_DEFAULT_kmod-nf-nathelper-extra=y
+CONFIG_DEFAULT_kmod-tcp-bbr=y
 CONFIG_DEFAULT_libc=y
 CONFIG_DEFAULT_libgcc=y
+CONFIG_DEFAULT_libustream-openssl=y
 CONFIG_DEFAULT_logd=y
 CONFIG_DEFAULT_luci=y
+CONFIG_DEFAULT_luci-app-accesscontrol=y
+CONFIG_DEFAULT_luci-app-adbyby-plus=y
+CONFIG_DEFAULT_luci-app-arpbind=y
+CONFIG_DEFAULT_luci-app-autoreboot=y
+CONFIG_DEFAULT_luci-app-ddns=y
+CONFIG_DEFAULT_luci-app-filetransfer=y
+CONFIG_DEFAULT_luci-app-flowoffload=y
+CONFIG_DEFAULT_luci-app-nlbwmon=y
+CONFIG_DEFAULT_luci-app-ramfree=y
+CONFIG_DEFAULT_luci-app-sfe=y
+CONFIG_DEFAULT_luci-app-sqm=y
+CONFIG_DEFAULT_luci-app-ssr-plus=y
+CONFIG_DEFAULT_luci-app-upnp=y
+CONFIG_DEFAULT_luci-app-vlmcsd=y
+CONFIG_DEFAULT_luci-app-vsftpd=y
+CONFIG_DEFAULT_luci-app-wol=y
+CONFIG_DEFAULT_luci-app-zerotier=y
+CONFIG_DEFAULT_luci-proto-relay=y
 CONFIG_DEFAULT_mkf2fs=y
 CONFIG_DEFAULT_mtd=y
 CONFIG_DEFAULT_netifd=y
@@ -228,6 +256,7 @@ CONFIG_DEFAULT_uclient-fetch=y
 CONFIG_DEFAULT_urandom-seed=y
 CONFIG_DEFAULT_urngd=y
 CONFIG_DEFAULT_wpad-mini=y
+CONFIG_DEFAULT_wget=y
 CONFIG_HAS_FPU=y
 CONFIG_AUDIO_SUPPORT=y
 CONFIG_GPIO_SUPPORT=y
@@ -470,7 +499,7 @@ CONFIG_FEED_telephony=y
 # CONFIG_PACKAGE_attendedsysupgrade-common is not set
 # CONFIG_PACKAGE_auc is not set
 CONFIG_PACKAGE_base-files=y
-# CONFIG_PACKAGE_block-mount is not set
+CONFIG_PACKAGE_block-mount=y
 # CONFIG_PACKAGE_blockd is not set
 # CONFIG_PACKAGE_bridge is not set
 CONFIG_PACKAGE_busybox=y
@@ -3968,10 +3997,11 @@ CONFIG_PACKAGE_luci-theme-netgear=y
 # CONFIG_PACKAGE_luci-proto-bonding is not set
 # CONFIG_PACKAGE_luci-proto-ipip is not set
 # CONFIG_PACKAGE_luci-proto-ipv6 is not set
+# CONFIG_PACKAGE_luci-proto-ncm is not set
 # CONFIG_PACKAGE_luci-proto-openconnect is not set
 CONFIG_PACKAGE_luci-proto-ppp=y
 # CONFIG_PACKAGE_luci-proto-qmi is not set
-# CONFIG_PACKAGE_luci-proto-relay is not set
+CONFIG_PACKAGE_luci-proto-relay=y
 # CONFIG_PACKAGE_luci-proto-vpnc is not set
 # CONFIG_PACKAGE_luci-proto-wireguard is not set
 
@@ -4315,9 +4345,7 @@ CONFIG_PACKAGE_wget=y
 # CONFIG_PACKAGE_ebtables is not set
 # CONFIG_PACKAGE_fwknop is not set
 # CONFIG_PACKAGE_fwknopd is not set
-CONFIG_PACKAGE_ip6tables=y
-# CONFIG_PACKAGE_ip6tables-extra is not set
-# CONFIG_PACKAGE_ip6tables-mod-nat is not set
+# CONFIG_PACKAGE_ip6tables is not set
 CONFIG_PACKAGE_iptables=y
 # CONFIG_IPTABLES_CONNLABEL is not set
 # CONFIG_IPTABLES_NFTABLES is not set
@@ -5228,6 +5256,7 @@ CONFIG_PACKAGE_simple-obfs=y
 # CONFIG_PACKAGE_tayga is not set
 # CONFIG_PACKAGE_tcpdump is not set
 # CONFIG_PACKAGE_tcpdump-mini is not set
+# CONFIG_PACKAGE_tgt is not set
 # CONFIG_PACKAGE_tor is not set
 # CONFIG_PACKAGE_tor-gencert is not set
 # CONFIG_PACKAGE_tor-geoip is not set
@@ -5251,27 +5280,19 @@ CONFIG_PACKAGE_vlmcsd=y
 # CONFIG_PACKAGE_vti is not set
 # CONFIG_PACKAGE_vxlan is not set
 # CONFIG_PACKAGE_wakeonlan is not set
-# CONFIG_PACKAGE_wpa-cli is not set
 # CONFIG_PACKAGE_wpa-supplicant is not set
-# CONFIG_WPA_RFKILL_SUPPORT is not set
-CONFIG_WPA_MSG_MIN_PRIORITY=3
 # CONFIG_WPA_WOLFSSL is not set
 # CONFIG_DRIVER_WEXT_SUPPORT is not set
-CONFIG_DRIVER_11N_SUPPORT=y
-CONFIG_DRIVER_11AC_SUPPORT=y
-CONFIG_DRIVER_11W_SUPPORT=y
+# CONFIG_DRIVER_11N_SUPPORT is not set
+# CONFIG_DRIVER_11AC_SUPPORT is not set
+# CONFIG_DRIVER_11W_SUPPORT is not set
 # CONFIG_PACKAGE_wpa-supplicant-basic is not set
-# CONFIG_PACKAGE_wpa-supplicant-mesh-openssl is not set
-# CONFIG_PACKAGE_wpa-supplicant-mesh-wolfssl is not set
 # CONFIG_PACKAGE_wpa-supplicant-mini is not set
 # CONFIG_PACKAGE_wpa-supplicant-openssl is not set
-# CONFIG_PACKAGE_wpa-supplicant-p2p is not set
 # CONFIG_PACKAGE_wpa-supplicant-wolfssl is not set
 # CONFIG_PACKAGE_wpad is not set
 # CONFIG_PACKAGE_wpad-basic is not set
-# CONFIG_PACKAGE_wpad-mesh-openssl is not set
-# CONFIG_PACKAGE_wpad-mesh-wolfssl is not set
-CONFIG_PACKAGE_wpad-mini=y
+# CONFIG_PACKAGE_wpad-mini is not set
 # CONFIG_PACKAGE_wpad-openssl is not set
 # CONFIG_PACKAGE_wpad-wolfssl is not set
 # CONFIG_PACKAGE_wpan-tools is not set
